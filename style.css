@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,400;1,500;1,600;1,800&family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: rgb(218, 206, 206);
+}
+
+.header{
+    text-align: center;
+}
+
+
+h2{
+    padding: 2rem;
+    font-weight: 800;
+    font-size: 2rem;
+
+}
+
+blockquote{
+    font-weight: 500;
+        font-size: 1.2rem;
+
+}
+
+cite{
+    font-weight: 1  00;
+    line-height: 2rem;
+}
+
+.meal-search{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+input{
+    padding: 1rem;
+    width: 50%;
+    border-top-left-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+    border-color: #000;
+    outline: none;
+    border-right: none;
+    background-color: rgb(218, 206, 206);
+}
+
+input::placeholder{
+    color: #000;
+}
+
+.btn{
+    width: 5%;
+    border-top-right-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    color: #fff;
+    border-color: #000;
+    background-color: rgb(127, 255, 0);
+}
+
+.btn:hover, .recipe:hover{
+    cursor: pointer;
+    background-color: rgb(114, 228, 1);
+    transition: all .3s linear;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+
+}
+
+.card{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.card img{
+    max-width: 100%;
+    /* padding-bottom: 3rem;
+    max-width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: transparent; */
+}
+
+.recipe{
+    font-family: inherit;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    margin: 2rem 0 1.2rem;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(218, 206, 206);
+    background-color: rgb(127, 255, 0);
+}
+
