@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  font-family: 'Raleway', sans-serif;
 }
 body{
     background-color: rgb(218, 206, 206);
@@ -71,14 +70,10 @@ input::placeholder{
     transition: all .3s linear;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 2rem;
 
-}
 
 .card{
+    position: relative;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     background-color: #fff;
     text-align: center;
@@ -107,3 +102,62 @@ input::placeholder{
     background-color: rgb(127, 255, 0);
 }
 
+
+.recipe-card{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    min-height: 100%;
+}
+
+.close{
+    color: rgb(127, 255, 0);
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.recipe-card p{
+    padding: 50px 10px 0;
+}
+
+.hiden{
+    display: none;
+}
+
+
+@media screen and (min-width: 600px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
