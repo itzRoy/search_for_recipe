@@ -1,39 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,400;1,500;1,600;1,800&family=Raleway&display=swap');
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-color: rgb(218, 206, 206);
 }
 
-.header{
+.header {
     text-align: center;
 }
 
-
-h2{
+h2 {
     padding: 2rem;
     font-weight: 800;
     font-size: 2rem;
-
 }
 
-blockquote{
+blockquote {
     font-weight: 500;
-        font-size: 1.2rem;
-
+    font-size: 1.2rem;
 }
 
-cite{
-    font-weight: 1  00;
+cite {
+    font-weight: 1 00;
     line-height: 2rem;
 }
 
-.meal-search{
+.meal-search {
     padding: 3rem 0;
     margin: 0 auto;
     max-width: 60vw;
@@ -42,7 +39,7 @@ cite{
     align-items: stretch;
 }
 
-input{
+input {
     padding: 1rem;
     flex-grow: 5;
     border-top-left-radius: 1.8rem;
@@ -53,11 +50,11 @@ input{
     background-color: rgb(218, 206, 206);
 }
 
-input::placeholder{
+input::placeholder {
     color: #000;
 }
 
-.btn{
+.btn {
     flex-grow: 1;
     border-top-right-radius: 1.8rem;
     border-bottom-right-radius: 1.8rem;
@@ -66,21 +63,20 @@ input::placeholder{
     background-color: rgb(127, 255, 0);
 }
 
-.btn:hover, .recipe:hover{
+.btn:hover,
+.recipe:hover {
     cursor: pointer;
     background-color: rgb(114, 228, 1);
     transition: all .3s linear;
 }
 
-.close:hover{
-     cursor: pointer;
+.close:hover {
+    cursor: pointer;
     color: rgb(114, 228, 1);
     transition: all .3s linear;
 }
 
-
-
-.card{
+.card {
     position: relative;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     background-color: #fff;
@@ -90,11 +86,12 @@ input::placeholder{
     border-radius: 2rem;
     overflow-y: scroll;
 }
+
 .card::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
-.card img{
+.card img {
     max-width: 100%;
     /* padding-bottom: 3rem;
     max-width: 100%;
@@ -103,7 +100,7 @@ input::placeholder{
     background-color: transparent; */
 }
 
-.recipe{
+.recipe {
     font-family: inherit;
     font-size: 1.1rem;
     border-radius: 2rem;
@@ -113,8 +110,7 @@ input::placeholder{
     background-color: rgb(127, 255, 0);
 }
 
-
-.recipe-card{
+.recipe-card {
     position: absolute;
     left: 0;
     top: 0;
@@ -123,8 +119,7 @@ input::placeholder{
     min-width: 100%;
 }
 
-
-.close{
+.close {
     width: 100%;
     color: rgb(127, 255, 0);
     background-color: #fff;
@@ -135,66 +130,62 @@ input::placeholder{
     top: 0;
 }
 
-.recipe-card p{
+.recipe-card p {
     padding: 50px 10px 0;
 }
 
-.hiden{
+.hiden {
     display: none;
 }
 
-
-@media screen and (max-width: 450px){
-    .container{
+@media screen and (max-width: 450px) {
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: stretch;
         align-items: center;
     }
-    .card{
+    .card {
         margin: 1rem;
     }
-    .meal-search{
+    .meal-search {
         padding: 1rem;
         justify-content: stretch;
     }
-    input{
+    input {
         width: 85%;
     }
-    .btn{
+    .btn {
         width: 15%;
     }
 }
 
-
-@media screen and (min-width: 451px){
-    .container{
+@media screen and (min-width: 451px) {
+    .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .btn{
+    .btn {
         width: 10%;
     }
 }
 
-
-@media screen and (min-width: 800px){
-    .container{
+@media screen and (min-width: 800px) {
+    .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .meal-search{
+    .meal-search {
         max-width: 40vw;
     }
 }
 
-
-@media screen and (min-width: 1100px){
-    .container{
+@media screen and (min-width: 1100px) {
+    .container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-    .meal-search{
+    .meal-search {
         max-width: 35vw;
     }
 }
